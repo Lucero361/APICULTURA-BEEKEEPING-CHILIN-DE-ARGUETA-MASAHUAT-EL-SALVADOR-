@@ -1,25 +1,30 @@
-# AGENTS.md
+# Guía para agentes
 
-## Objetivo del proyecto
-Este repositorio está pensado como un sitio web moderno para un negocio o proyecto apícola en El Salvador. El proyecto debe priorizar claridad, capacidad de respuesta, accesibilidad y SEO local.
+## Propósito del proyecto
 
-## Stack del proyecto
-El sitio usa la siguiente configuración de frontend:
-- Vite
-- React
-- TypeScript
+Este repositorio contiene un sitio web moderno sobre apicultura en El Salvador
+y la importancia de las abejas para la biodiversidad y la seguridad
+alimentaria. Presenta la apicultura responsable y la educación ambiental como
+formas de comprender, valorar y cuidar a los polinizadores y sus ecosistemas.
+Prioriza claridad, accesibilidad, diseño adaptable y SEO local.
 
-Si el stack cambia más adelante, actualiza este archivo para que refleje la configuración real.
+## Público y tono
 
-## Principios
-- Preferir código frontend limpio y mantenible antes que complejidad innecesaria.
-- Mantener los componentes pequeños y reutilizables.
-- Usar HTML semántico e interacciones accesibles.
-- Diseñar el sitio mobile-first y rápido.
-- Mantener el contenido bien estructurado y fácil de editar.
-- Evitar dependencias innecesarias.
+El contenido debe ser accesible para personas de todas las edades, incluyendo
+estudiantes, familias, comunidades, agricultores y productores. Mantén un tono
+claro, educativo, inclusivo e inspirador, sin alarmismo ni culpabilización.
 
-## Estructura sugerida del proyecto
+Cuando sea pertinente, promueve la conservación de las abejas y sus hábitats,
+la educación ambiental responsable, la siembra de plantas que beneficien a los
+polinizadores y una apicultura local respetuosa con su bienestar. Las
+recomendaciones deben ser prácticas y seguras para el público al que se
+dirigen.
+
+## Stack y estructura
+
+El sitio usa Vite, React y TypeScript. Si el stack cambia, actualiza esta guía
+para reflejar la configuración real.
+
 ```text
 index.html
 src/
@@ -28,23 +33,44 @@ src/
   styles.css
 ```
 
-## Convenciones de codificación
-- Usar TypeScript para la lógica y las props de los componentes.
-- Nombrar archivos y componentes en PascalCase para componentes React.
-- Usar camelCase para variables y funciones.
-- Preferir objetos reutilizables de datos antes que textos duplicados.
-- Usar texto alternativo descriptivo para imágenes.
-- Mantener contenido del negocio, servicios y datos de contacto en archivos centralizados cuando sea posible.
+## Principios de implementación
 
-## Expectativas de UI y contenido
-- El sitio debe sentirse profesional y acogedor.
-- Usar secciones como: Inicio, Acerca de, Servicios, Productos, Galería, Contacto, Preguntas frecuentes y Pie de página.
-- Incluir llamadas a la acción y una ruta clara de contacto para generar leads.
-- Respetar contraste de color y legibilidad.
-- Asegurar que formularios y botones sean accesibles por teclado.
+- Prefiere código frontend mantenible, componentes pequeños y dependencias
+  necesarias.
+- Usa HTML semántico, interacciones accesibles y diseño mobile-first.
+- Usa TypeScript para la lógica y las props de componentes; PascalCase para
+  componentes y camelCase para variables y funciones.
+- Reutiliza datos en lugar de duplicar textos y usa texto alternativo
+  descriptivo en las imágenes.
+- Mantén el contenido del negocio, servicios y datos de contacto centralizado
+  cuando sea posible.
+- No agregues backend ni base de datos salvo que los requisitos lo pidan.
 
-## Comandos
-Usar los siguientes comandos en la raíz del proyecto:
+## Contenido y experiencia de usuario
+
+- Mantén una presentación profesional y acogedora, con contenido bien
+  estructurado, legible y fácil de editar.
+- Incluye llamadas a la acción y vías claras de contacto cuando sean
+  pertinentes.
+- Cuida el contraste, la jerarquía visual, la adaptación a móvil y escritorio
+  y la navegación por teclado.
+- No inventes datos, estadísticas, especies, ubicaciones, alianzas, campañas,
+  resultados ni afirmaciones científicas. Verifica los datos concretos con
+  fuentes confiables y atribúyelos.
+- No presentes recomendaciones generales como asesoría médica, legal,
+  agrícola o de seguridad especializada. Evita promesas absolutas y prácticas
+  riesgosas para las personas, las abejas u otros polinizadores.
+
+## Reglas de trabajo
+
+- Lee el `README.md` y los archivos relevantes antes de modificarlos.
+- Limita cada cambio al objetivo solicitado y evita cambios accidentales fuera
+  de alcance.
+- Revisa el diff completo antes de terminar.
+
+## Comandos y validación
+
+Ejecuta estos comandos desde la raíz del proyecto:
 
 ```bash
 npm install
@@ -53,13 +79,6 @@ npm run build
 npm run preview
 ```
 
-## Nivel de calidad antes de terminar el trabajo
-- Sin build roto.
-- Sin errores en la consola del navegador.
-- Responsivo en móvil y escritorio.
-- Jerarquía visual clara y contenido legible.
-- Interacciones y formularios accesibles.
-- Estilo limpio y minimalista.
-
-## Notas para agentes futuros
-Este repositorio es un proyecto web y debe mantenerse enfocado en la experiencia del usuario. No agregar complejidad de backend o base de datos a menos que los requisitos del proyecto cambien explícitamente.
+Antes de terminar, comprueba que el build pase, que el Markdown sea legible y
+que `git diff --check` no reporte errores de formato. No afirmes haber
+ejecutado validaciones que no se hayan podido realizar.
